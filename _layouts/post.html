@@ -2,15 +2,45 @@
 layout: default
 comment: false
 ---
+<style>
+.tags {
+  display:inline-block;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #EEE;
+}
+.tag {
+  line-height: 2;
+  display: inline-block;
+  background-color: #222;
+
+  padding: 0 10px;
+  margin: 25px 2px 0 0;
+  border-radius: 3px;
+  border: solid 1px #333;
+}
+</style>
 
 <article class="post">
   <h1 style="margin-bottom:0">{{ page.title }}</h1>
   <div class="date">
-  {{ page.date | date: "%e %B %Y" }}
+    {{ page.date | date: "%e %b %Y, %H:%m" }}
+    <br>
+    {% if page.modified %}
+    [modified - {{ page.modified | date: "%e %b %Y, %H:%m"}}]
+    {% endif %}
   </div>
-  
+
   <div class="entry">
     {{ content }}
+
+    <div class="tags">
+      {% for tag in page.tags %}
+        <div class="tag">
+          {{tag}}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 
   {% include disqus.html %}
