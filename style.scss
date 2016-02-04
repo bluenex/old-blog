@@ -5,6 +5,11 @@
 // IMPORTS
 //
 
+@font-face {
+  font-family: CSChatThai;
+  src: url(../fonts/cschatthai/CSChatThai.ttf);
+}
+
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
@@ -19,7 +24,8 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  // font: 18px/1.4 $helvetica;
+  font: 24px/1.1 $cschatthai;
   color: $darkGray;
 }
 
@@ -267,7 +273,8 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-size: 15px;
+    // font-size: 15px;
+    font-size: 21px;
   }
 }
 

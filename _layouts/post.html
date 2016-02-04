@@ -5,19 +5,19 @@ comment: false
 <style>
 .tags {
   display:inline-block;
-  font-size: 0.95rem;
-  font-weight: bold;
-  color: #EEE;
+  font-size: 1.25rem;
+  /*font-weight: bold;*/
+  color: #4183C4;
 }
 .tag {
-  line-height: 2;
+  line-height: 1.4;
   display: inline-block;
-  background-color: #222;
+  background-color: #FFF;
 
-  padding: 0 10px;
-  margin: 25px 2px 0 0;
-  border-radius: 3px;
-  border: solid 1px #333;
+  padding: 0px 11px;
+  margin: 10px 3px 0 0;
+  border-radius: 2px;
+  border: solid 1px #EEE;
 }
 </style>
 
@@ -34,13 +34,17 @@ comment: false
   <div class="entry">
     {{ content }}
 
-    <div class="tags">
-      {% for tag in page.tags %}
-        <div class="tag">
-          {{tag}}
-        </div>
-      {% endfor %}
-    </div>
+    <center>
+      <div class="tags">
+        <!-- {{ page.tags | join: '   ' }} -->
+
+        {% for tag in page.tags %}
+          <div class="tag">
+            {{tag}}
+          </div>
+        {% endfor %}
+      </div>
+    </center>
   </div>
 
   {% include disqus.html %}
