@@ -24,10 +24,10 @@ comment: false
 <article class="post">
   <h1 style="margin-bottom:0">{{ page.title }}</h1>
   <div class="date">
-    {{ page.date | date: "%e %b %Y, %H:%m" }}
+    {{ page.date | date: "%e %b %Y, %H:%M" }}
     <br>
     {% if page.modified %}
-    [modified - {{ page.modified | date: "%e %b %Y, %H:%m"}}]
+    [modified - {{ page.modified | date: "%e %b %Y, %H:%M"}}]
     {% endif %}
   </div>
 
