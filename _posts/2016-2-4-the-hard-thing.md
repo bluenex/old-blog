@@ -14,9 +14,11 @@ tags: [diary]
 เราไม่ได้พลอตบล็อกนี้ไว้ว่าจะเขียนยังไง จบยังไง เพราะงั้นขอจบตรงนี้ พร้อมกับฝากเพลงที่ชอบฟังเวลารู้สึกว่าชีวิตมัวหมองไว้สักสองเพลง ไม่แน่วันดีคืนดีกลับมาอ่านบล็อกนี้อีกอาจจะอยากลบทิ้งก็เป็นได้
 
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wYwF-IXpbNk" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ryZeSZEvcck" frameborder="0" allowfullscreen></iframe>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/wYwF-IXpbNk" frameborder="0" allowfullscreen></iframe></div>
+<br>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/ryZeSZEvcck" frameborder="0" allowfullscreen></iframe></div>
+
 </center>
 
 เนื่องจากเดือนนี้เป็นเดือนแห่งความรักก็ขอให้ทุกคนสมหวังในความรักกันนะครับ ส่วนตัวเราก็ขอบายความรักไปอีกปี :)
