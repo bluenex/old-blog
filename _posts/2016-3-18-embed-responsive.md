@@ -41,4 +41,4 @@ https://www.youtube.com/watch?v=feVeUWCu15E
 }
 ```
 
-ครั้งต่อๆ ไปก็แค่เอา embed link จาก YouTube มา เอา `width` กับ `height` ออกจาก `<iframe>` แล้วก็จับใส่เข้าไปใน `<div class="embed-container"></div>` เป็นอันเสร็จ นอกเหนือไปจาก YouTube แล้ว แน่นอนว่าก็มีอีกหลายบริการที่โปรเจ็คนี้ช่วยได้ เช่น **Vimeo, Dailymotion, Google Maps, Instagram, Vine** เป็นต้น ถ้าสนใจก็ไปลองเล่นกันดูโลดฮะ
+ครั้งต่อๆ ไปก็แค่เอา embed link จาก YouTube มา เอา `width` กับ `height` ออกจาก `<iframe>` แล้วก็จับใส่เข้าไปใน `<div class="embed-container"></div>` เป็นอันเสร็จ นอกเหนือไปจาก YouTube แล้ว แน่นอนว่าก็มีอีกหลายบริการที่โปรเจ็คนี้ช่วยได้ เช่น *Vimeo, Dailymotion, Google Maps, Instagram, Vine* เป็นต้น ถ้าสนใจก็ไปลองเล่นกันดูโลดฮะ
