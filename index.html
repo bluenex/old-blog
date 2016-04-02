@@ -7,12 +7,27 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <!--div class="date">
+        {% if post.modified %}
+        {{ post.modified | date: "%e %b %Y, %H:%M" }}
+        {% else %}
+        {{ post.date | date: "%e %b %Y, %H:%M"  }}
+        {% endif %}
+      </div-->
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      
+      <div class="date" style="float:right">
+        {% if post.modified %}
+        {{ post.modified | date: "%e %b %Y" }}
+        {% else %}
+        {{ post.date | date: "%e %b %Y"  }}
+        {% endif %}
+      </div>
     </article>
   {% endfor %}
 </div>
