@@ -40,7 +40,7 @@ comment: false
 
         {% for tag in page.tags %}
           <div class="tag">
-            {{tag}}
+            <a href="{{site.github.url}}/tags/#{{tag}}">{{tag}}</a>
           </div>
         {% endfor %}
       </div>
