@@ -11,7 +11,7 @@ permalink: /tags/
   /*font-weight: bold;*/
   color: #4183C4;
   list-style: none;
-  margin-left: 0;
+  margin: 0px 10px;
   padding-left: 0;
 }
 
@@ -28,8 +28,8 @@ permalink: /tags/
   display: inline-block;
   background-color: #FFF;
 
-  padding: 0px 11px;
-  margin: 10px 3px 0 0;
+  padding: 1px 7px;
+  margin: 5px 0;
   border-radius: 2px;
   border: solid 1px #EEE;
 }
