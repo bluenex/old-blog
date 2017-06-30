@@ -19,6 +19,10 @@ permalink: /tags/
   display: inline;
 }
 
+.tag:hover {
+  background-color: #ccffcf;
+}
+
 .tags li a {
   margin-top: 0;
 }
@@ -28,16 +32,22 @@ permalink: /tags/
   display: inline-block;
   background-color: #FFF;
 
-  padding: 1px 7px;
+  padding: 0px 9.5px;
   margin: 5px 0;
-  border-radius: 2px;
-  border: solid 1px #EEE;
+  border-radius: 20px;
+  border: solid 2px #BBB;
 }
 
 .tag .count {
   color: red;
   font-weight: bold;
 }
+
+.term {
+  display: inline-block;
+  padding-top: 0.1em;
+}
+
 </style>
 
 <article>
@@ -47,7 +57,7 @@ permalink: /tags/
   <ul class="tags">
     {% for item in (0..site.tags.size) %}{% unless forloop.last %}
       {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-      <li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span>&nbsp;&nbsp;<span class="count">{{ site.tags[this_word].size }}</span></a></li>
+      <li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span>&nbsp;<span class="count">{{ site.tags[this_word].size }}</span></a></li>
     {% endunless %}{% endfor %}
   </ul>
 
