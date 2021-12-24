@@ -74,6 +74,10 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-coffeescript
   - jekyll-paginate
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
 
 # Exclude these files from your production _site
 exclude:
