@@ -2,7 +2,7 @@
 layout: post
 title: บันทึกการแก้ไขสไตล์ของ Jekyll theme
 date: 02-03-2017 13:00:00+0700
-tags: [note, jekyll, css]
+tags: [note, jekyll]
 ---
 
 เมื่อสองสามวันมานี้ได้เข้าไปวุ่นวายกับ `css` ของ [tupleblog](https://tupleblog.github.io/) นิดหน่อยเลยมาบันทึกไว้
@@ -11,14 +11,14 @@ tags: [note, jekyll, css]
 
 นั่งลองไปสักพัก ฟ้อนต์ไม่ค่อยได้วุ้ย มาๆๆ เลือกฟ้อนต์หน่อยเพื่อน ระดับนี้แล้วก็ต้อง open fonts อะนะ แล้วจะให้ดีฟ้อนต์สำหรับโค้ดก็น่าจะเป็น **monospace** โอเคไปเลยจ้า [Google Fonts](https://fonts.google.com/?category=Monospace) นั่งมองกันสักพักก็ได้มาอีกสามชื่อ คัดเลือกกันสักพักก็ได้ [**Roboto Mono**](https://fonts.google.com/specimen/Roboto+Mono) มาเป็นที่หนึ่ง ก็ไปจัดการแปลงฟ้อนต์เพื่อใช้สำหรับเว็บด้วยเครื่องมือเจ้าเดิม [fontsquirrel](https://www.fontsquirrel.com/tools/webfont-generator) ได้ไฟล์ `woff` `eot` `svg` `ttf` มาเสร็จสรรพ แล้วก็พบว่าการเพิ่มฟ้อนต์เข้าเว็บนี่ยุ่งยากเหมือนกันนะ (เคยทำตอนเปิดบล็อกแรกๆ แต่ลืมไปละ ลืมสนิท) ทำอยู่สักพักทำไมไม่ได้สักทีฟะ เลยต้องไปขุด commit เก่าที่เคยทำไว้ดู กราบขอบคุณที่โลกนี้มี `git`.. ตามไปดู [commit นี้](https://github.com/tupleblog/tupleblog.github.io/commit/e0a4933842687a6196d4c4bf2fff63c98c17e87f#diff-6badce5a0657d8fcbf3905e5c8d4f6fa)เลย ตรงนี้เลยที่ลืม ลืม  `import`..
 
-โอเค ปรับขนาดอะไรเรียบร้อยมาสังเกตเห็นของแปลกอีกละ เส้นขอบของกรอบกับ `padding` ไม่เท่ากันเวลาใช้ <code>{% raw %}```{% endraw %}</code> กับ `{% raw %}{% highlight %}{% endraw %}` ตึกโป๊ะ ก็เลยแงะ inspector มาดูพบว่า `{% raw %}{% highlight %}{% endraw %}` คอมไพล์แล้วได้ 
+โอเค ปรับขนาดอะไรเรียบร้อยมาสังเกตเห็นของแปลกอีกละ เส้นขอบของกรอบกับ `padding` ไม่เท่ากันเวลาใช้ <code>{% raw %}```{% endraw %}</code> กับ `{% raw %}{% highlight %}{% endraw %}` ตึกโป๊ะ ก็เลยแงะ inspector มาดูพบว่า `{% raw %}{% highlight %}{% endraw %}` คอมไพล์แล้วได้
 
 ```html
 <figure>
     <pre class="highlight">
         <code></code>
     </pre>
-<figure>  
+<figure>
 ```
 
 ส่วน <code>{% raw %}```{% endraw %}</code> คอมไพล์ได้
@@ -31,7 +31,7 @@ tags: [note, jekyll, css]
 </div>
 ```
 
-ซึ่ง `<figure>` มี `padding` เป็นของตัวเอง ส่วน `.highlight` มี `border` เป็นของตัวเอง เอ้อ เอาสิ ก็มานั่งหาทางแก้แบบเชิงเทคนิค คิดไปสักพักยังไม่ทันคิดออก [@titipata](https://github.com/titipata) บอกเออ งั้นเปลี่ยนเป็น <code>{% raw %}```{% endraw %}</code> แม่มให้หมดเลยดีกว่า (สาเหตุที่มีทั้งสองแบบเพราะแบบ triple-ticks นี่พึ่งมารองรับตอน **Jekyll 3**) ฟ้าบบบ สิบนาทีผ่านไป `push` มาอย่างไว ยอมมันเลย 
+ซึ่ง `<figure>` มี `padding` เป็นของตัวเอง ส่วน `.highlight` มี `border` เป็นของตัวเอง เอ้อ เอาสิ ก็มานั่งหาทางแก้แบบเชิงเทคนิค คิดไปสักพักยังไม่ทันคิดออก [@titipata](https://github.com/titipata) บอกเออ งั้นเปลี่ยนเป็น <code>{% raw %}```{% endraw %}</code> แม่มให้หมดเลยดีกว่า (สาเหตุที่มีทั้งสองแบบเพราะแบบ triple-ticks นี่พึ่งมารองรับตอน **Jekyll 3**) ฟ้าบบบ สิบนาทีผ่านไป `push` มาอย่างไว ยอมมันเลย
 
 code block ของ [tupleblog](https://tupleblog.github.io/) ก็เลยหน้าตาเปลี่ยนไปด้วยประการฉะนี้
 

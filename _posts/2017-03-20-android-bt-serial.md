@@ -2,7 +2,7 @@
 layout: post
 title: มาลองเขียนแอปแอนดรอยด์เชื่อมต่อกับบลูทูธบน Arduino กัน
 date: 20-03-2017 13:17:00+0700
-tags: [android, arduino, bluetooth, serial, diary]
+tags: [android, arduino, diary]
 ---
 
 บล็อกสั้นวันนี้ขอเสนอการเขียนแอปแอนดรอยด์แบบง่ายๆ ด้วย Xamarin แต่จะว่าเขียนก็ไม่ถูกนะ เพราะก็อปเค้ามาแก้นิดเดียว แฮร่ แต่เนื่องจากโค้ดต้นฉบับเป็น open source ใต้ License Apache 2.0 แถมเราไม่ได้ทำเพื่อใช้แสวงหากำไรอีก ถือว่าเพื่อการศึกษาเนาะ
@@ -50,7 +50,7 @@ private const string LED_OFF = "0";
 //    SendMessage(message);
 //};
 
-// On button 
+// On button
 onButton = FindViewById<Button>(Resource.Id.onButton);
 onButton.Click += delegate (object sender, EventArgs e)
 {

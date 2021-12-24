@@ -2,7 +2,7 @@
 layout: post
 title: ทำความรู้จักกับตัวช่วยสร้าง embed link แบบ responsive
 date: 18-3-2016 19:15:00
-tags: [webdev, embed, video]
+tags: [web]
 ---
 
 สืบเนื่องมาจากบล็อกที่แล้ว พอลองกลับไปอ่านในมือถือก็พบว่าวิดิโอจาก YouTube ที่ลงไว้มันไม่ responsive ซะงั้น ว่าจะนั่งแก้เองลองไปเรื่อยๆ ก็ขี้เกียจ ก็เลยลองหาดูเผื่อจะเจอ snippet ง่ายๆ จาก StackOverflow ไปๆ มาๆ ก็ไปเจอโปรเจ็ค [embedresponsively.com](http://embedresponsively.com) นี้เข้าก็น่าสนใจดีเพราะมันง่ายเหลือเกิน จะเอามาใส่ css ของตัวเองก็ง่าย ก็เลยอยากจะบันทึกไว้ในบล็อกนี้ซะหน่อย ตัวโปรเจ็คนี้[มีอยู่บน Github ด้วย](https://github.com/jeffehobbs/embedresponsively/)เผื่อใครสนใจ
