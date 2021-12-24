@@ -5,16 +5,7 @@
 // IMPORTS
 //
 
-@font-face {
-  font-family: Inconsolata;
-  src: url('../fonts/inconsolata/Inconsolata-Regular.ttf');
-}
-
-@font-face {
-  font-family: CSChatThai;
-  src: url(../fonts/cschatthai/CSChatThai.ttf);
-}
-
+@import "fonts";
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
@@ -28,7 +19,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   // font: 18px/1.4 $helvetica;
   font: 24px/1.1 $cschatthai;
   color: $darkGray;
@@ -41,13 +32,18 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   // font-family: $helveticaNeue;
   font-family: $cschatthai;
   color: $darkerGray;
   // font-weight: 400;
 
-  line-height: 1.0;
+  line-height: 1;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -83,13 +79,15 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
+  cursor: pointer;
+  &:hover,
+  &:active {
     color: $blue;
   }
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -102,19 +100,25 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -146,12 +150,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*********************/
@@ -265,7 +269,7 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
+    margin: 1.8em 0.8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
@@ -329,7 +333,9 @@ body {
   overflow: hidden;
   max-width: 100%;
 }
-.embed-container iframe, .embed-container object, .embed-container embed {
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -337,9 +343,9 @@ body {
   height: 100%;
 }
 
-// 
+//
 // CUSTOMS
-// 
+//
 
 // set all images position at center
 img {
@@ -351,3 +357,4 @@ img {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "fontawesome";
+@import "tags";

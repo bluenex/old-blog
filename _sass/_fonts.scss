@@ -1,7 +1,9 @@
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-$cschatthai: "CSChatThai", Arial, sans-serif;
-$csprajad: "CSPraJad", Arial, sans-serif;
-$inconsolata: "Inconsolata", monospace, 'Bitstream Vera Sans Mono', 'Courier';
+@font-face {
+  font-family: Inconsolata;
+  src: url("../fonts/inconsolata/Inconsolata-Regular.ttf");
+}
+
+@font-face {
+  font-family: CSChatThai;
+  src: url(../fonts/cschatthai/CSChatThai.ttf);
+}
